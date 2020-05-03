@@ -4,16 +4,20 @@ Obtiene  pública porporcionada por el servicio de impuestos internos mediante u
 
 
 
-### Instalación 
+### Instalación vía composer
 
 ```
-composer require
+composer require edelgado/sii
 ```
 
 ### Ejemplo de uso
 
 
 ```
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+
 if(\Sii\Helpers\Rut::validar('93834000-5')){
 
     $rut = new \Sii\Helpers\Rut('93834000-5');
@@ -23,6 +27,7 @@ if(\Sii\Helpers\Rut::validar('93834000-5')){
 }else{
     echo 'RUT inválido';
 }
+
 ```
 
 ---

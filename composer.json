@@ -1,4 +1,6 @@
 {
+    "name": "edelgado/sii",
+    "description": "Consulta datos públicos desde el SII chile",
     "require": {
         "guzzlehttp/guzzle": "~6.0",
         "voku/simple_html_dom": "^4.7",
